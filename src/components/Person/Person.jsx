@@ -7,10 +7,10 @@ export const Person = ({ person }) => {
   const { name, age, sex, partnerName, isMarried } = person;
 
   const partner = isMarried && sex === 'm'
-  ? `${partnerName} is my wife`
-  : isMarried && sex === 'f'
-    ? `${partnerName} is my husband`
-    : 'I am not married';
+    ? `${partnerName} is my wife`
+    : isMarried && sex === 'f'
+      ? `${partnerName} is my husband`
+      : 'I am not married';
 
   return (
     <section className="Person">
